@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: radial-gradient(
     circle,
@@ -10,5 +16,14 @@ body {
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px 50px;
+  border-radius: 30px;
+  position: fixed;
 }
