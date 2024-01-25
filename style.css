@@ -11,13 +11,10 @@
 
 body {
   font-family: var(--main-font-family);
-  background: var(--light-color);
+  background-repeat: no-repeat;
 }
 
 header {
-  background-image: url(images/Untitled_Artwork-2.png);
-  background-size: cover;
-  border-radius: 30px;
   width: 100%;
   max-height: 100svh;
   margin: 0 auto;
@@ -27,6 +24,10 @@ header {
 header .hero {
   margin: 100px auto;
   width: 100%;
+  background-image: url(images/Untitled_Artwork-2.png);
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -50,43 +51,6 @@ header p {
   margin: 0 auto;
 }
 
-section {
-  width: 100%;
-  height: 100svh;
-}
-
-.navbar {
-  background-color: rgba(255, 255, 255, 0.4);
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 20px;
-  margin: 30px 50px;
-  border-radius: 30px;
-  position: fixed;
-  backdrop-filter: blur(5px);
-}
-
-.nav-item {
-  justify-content: flex-end;
-}
-
-.nav-item:hover {
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(4px);
-}
-
-.spacing {
-  margin: 80px;
-}
-
-.aboutme-section h1 {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .hero-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -100,6 +64,43 @@ section {
   background-position: 0px 10px;
   background-repeat: no-repeat;
   background-size: 100px;
+}
+
+section {
+  width: 100%;
+  height: 100svh;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+  border: solid 1px rgba(33, 33, 33, 0.1);
+  font-size: 15px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  margin: 30px 50px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav {
+  max-width: max-content;
+  margin: 5px;
+}
+.nav-item {
+  text-align: end;
+  padding-right: 5px;
+}
+
+.nav-item:hover {
+  border-radius: 30px;
+  border: solid 1px rgba(33, 33, 33, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.icon-toggle {
+  color: black;
 }
 
 @media screen and (max-width: 900px) {
