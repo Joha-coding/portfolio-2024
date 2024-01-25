@@ -82,7 +82,7 @@ h2 {
 }
 
 header p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   padding: 15px;
   margin: 15px auto;
@@ -132,11 +132,40 @@ section.aboutme-section {
   background-position: center;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 
 .aboutme-section .skills {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+section .column {
+  font-size: 18px;
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+section .column h5 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+section .column li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.resume img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
 /*media query*/
@@ -165,6 +194,23 @@ section.aboutme-section {
   }
 
   header button {
-  font-size: 15px;
-  
+    font-size: 15px;
+  }
+
+  .aboutme-section .skills {
+    grid-template-columns: 1fr;
+  }
+
+  section .column {
+    margin: 10px;
+  }
+
+  section .column h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  section .column li {
+    font-size: 12px;
+  }
 }
