@@ -61,7 +61,7 @@ header p {
 
 .firstcol-hero {
   background-image: url("images/long-horizontal.png");
-  background-position: 0px 10px;
+  background-position: 0px 5px;
   background-repeat: no-repeat;
   background-size: 100px;
 }
@@ -84,6 +84,12 @@ nav {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.navbar-brand img {
+  margin: 0 auto;
+  padding: 0;
+  height: 1.8em;
+}
+
 .navbar-nav {
   max-width: max-content;
   margin: 5px;
@@ -103,5 +109,5 @@ nav {
   color: black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 }
