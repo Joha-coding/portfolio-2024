@@ -16,13 +16,13 @@ body {
 
 header {
   width: 100%;
-  max-height: 100svh;
+  height: 100vh;
   margin: 0 auto;
   padding: 0;
 }
 
 header .hero {
-  margin: 100px auto;
+  margin: 67px auto;
   width: 100%;
   background-image: url(images/Untitled_Artwork-2.png);
   background-size: cover;
