@@ -14,6 +14,8 @@ body {
   background-repeat: no-repeat;
 }
 
+/* NAVBAR STYLING */
+
 nav {
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
@@ -46,6 +48,8 @@ nav {
 .icon-toggle {
   color: black;
 }
+
+/* HEADER STYLING */
 
 header,
 section {
@@ -132,9 +136,10 @@ section.aboutme-section {
   background-position: center;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-
   max-height: 100vh;
 }
+
+/* ABOUT ME STYLING */
 
 .aboutme-section .skills {
   display: grid;
@@ -157,10 +162,44 @@ section .column h5 {
   margin-bottom: 15px;
 }
 
-section .column li {
+.tag-list {
   list-style: none;
   font-size: 14px;
+  margin: 5px;
+  padding-inline: 0;
 }
+
+.tag-list li {
+  padding: 0.5rem;
+  background: var(--light-color);
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.scroller {
+  max-width: 100%;
+  outline: 3px solid black;
+}
+
+.scroller_inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* WORK STYLING */
+
+section.work {
+  background-image: url(images/Untitled_Artwork-2\ copia.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  max-height: 100vh;
+}
+
+/* RESUME STYLING */
 
 .resume {
   background-image: url(images/Untitled_Artwork-1\ 2.png);
@@ -186,6 +225,8 @@ section .column li {
   text-decoration: none;
 }
 
+/* FOOTER STYLING */
+
 footer {
   background-image: url(images/Untitled_Artwork-2.png);
   background-size: cover;
@@ -205,21 +246,25 @@ footer .social-icons {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.social-icons i {
+  font-size: 20px;
+}
+
 .linkedin,
 .github,
 .email {
   transition: all 120ms ease-in-out;
 }
-.linkedin:hover,
-.github:hover,
+.linkedin:hover {
+  color: #f17c53;
+}
+
+.github:hover {
+  color: white;
+}
+
 .email:hover {
-  color: rgba(0, 0, 0, 0.9);
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 30px;
-  border: solid 1px rgba(0, 0, 0, 0.9);
-  backdrop-filter: blur(40px);
-  padding: 10px;
-  margin: 0 auto;
+  color: #fcb289;
 }
 
 footer a {
