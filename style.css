@@ -141,7 +141,7 @@ section.aboutme-section {
 
 /* ABOUT ME STYLING */
 .aboutme-section {
-  height: 100%;
+  height: 100vh;
 }
 
 .aboutme-section .skills {
@@ -214,7 +214,12 @@ section.work {
   background-position: center;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  height: 100%;
+  height: 100vh;
+}
+
+.work {
+  margin: 0 auto;
+  display: block;
 }
 
 .projects {
@@ -407,6 +412,11 @@ footer a {
     border-radius: 0.5rem;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     font-size: 12px;
+  }
+
+  .work {
+    margin: 0 auto;
+    display: block;
   }
 
   .project {
