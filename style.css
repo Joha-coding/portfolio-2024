@@ -140,6 +140,9 @@ section.aboutme-section {
 }
 
 /* ABOUT ME STYLING */
+.aboutme-section {
+  height: 100%;
+}
 
 .aboutme-section .skills {
   display: block;
@@ -211,7 +214,7 @@ section.work {
   background-position: center;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  max-height: 100vh;
+  height: 100%;
 }
 
 .projects {
@@ -222,12 +225,12 @@ section.work {
 .project {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
-  height: 22vh;
-  width: 30vh;
+  height: 30vh;
+  width: 35vh;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  margin: 30px auto;
+  margin: 30px;
 }
 
 .fa-brands,
@@ -241,6 +244,7 @@ section.work {
 .fa-brands:hover,
 .fa-solid:hover {
   color: #f07b55;
+  font-size: 1em;
 }
 
 .projects i {
@@ -249,6 +253,17 @@ section.work {
 
 .project p {
   text-align: end;
+}
+
+.project h5 {
+  color: rgba(33, 33, 33, 0.7);
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 15px;
+}
+
+.project h6 {
+  margin-top: 25px;
 }
 
 .project h5,
