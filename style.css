@@ -142,50 +142,61 @@ section.aboutme-section {
 /* ABOUT ME STYLING */
 
 .aboutme-section .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: block;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
 }
 
-section .column {
-  font-size: 18px;
-  margin: 15px;
-  background-color: rgba(255, 255, 255, 0.3);
-  background-size: cover;
-  border-radius: 15px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+.aboutme-section ul {
   text-align: center;
 }
 
-section .column h5 {
+h5 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
+  justify-content: center;
 }
+
+/* SCROLLING EFFECT */
 
 .tag-list {
   list-style: none;
-  font-size: 14px;
-  margin: 5px;
+  margin: 0;
   padding-inline: 0;
 }
 
 .tag-list li {
   padding: 0.5rem;
-  background: var(--light-color);
   border-radius: 0.5rem;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
-.scroller {
-  max-width: 100%;
-  outline: 3px solid black;
-}
-
-.scroller_inner {
+.scroller-inner {
   padding-block: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.three-columns {
+  padding-block: 1rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.three-columns .sub-3col {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
 }
 
 /* WORK STYLING */
@@ -305,10 +316,6 @@ footer a {
 
   header button {
     font-size: 15px;
-  }
-
-  .aboutme-section .skills {
-    grid-template-columns: 1fr;
   }
 
   section .column {
