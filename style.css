@@ -71,13 +71,17 @@ header .hero {
 }
 
 header h1,
-#app {
+#hello {
   font-family: var(--main-font-family);
   margin-top: 5px;
   padding: 25px;
-  font-size: 55px;
+  font-size: 65px;
   text-align: center;
   line-height: 60px;
+}
+
+.typewritter-wrap {
+  height: 140px;
 }
 
 h2 {
@@ -158,6 +162,7 @@ section.aboutme-section {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   justify-content: center;
+  font-size: 30px;
 }
 
 /*New Animation - Infinite Scroll Animation*/
@@ -165,7 +170,7 @@ section.aboutme-section {
 .scroller {
   max-width: 80%;
   display: block;
-  margin: 15px auto;
+  margin: 0px auto;
 }
 
 .scroller__inner {
@@ -267,11 +272,18 @@ section.work {
 }
 
 .fa-brands,
-.fa-solid {
+.fa-solid,
+.fa-envelope {
   margin: 5px;
   font-size: 15px;
   transition: all 120ms ease-in-out;
   color: black;
+}
+
+.fa-brands:hover,
+.fa-solid:hover,
+.fa-envelope:hover {
+  color: #bfb2c0;
 }
 
 .projects i {
@@ -361,11 +373,12 @@ footer a {
     font-size: 40px;
   }
 
-  #app {
-  margin-top: 5px;
-  padding: 15px;
-  font-size: 30px;
-  line-height: 30px;
+  #hello {
+    margin-top: 5px;
+    padding: 15px;
+    font-size: 40px;
+    line-height: 1;
+  }
 
   header h2 {
     margin-top: 15px;
@@ -373,6 +386,7 @@ footer a {
     text-align: center;
     color: rgba(33, 33, 33, 0.7);
   }
+
   header p {
     font-size: 15px;
     margin: 5px auto;
@@ -408,6 +422,34 @@ footer a {
     font-size: 12px;
   }
 
+  .scroller {
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
+  }
+
+  .scroller__inner {
+    padding-block: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .aboutme-section h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .aboutme-section h5 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 25px;
+  }
+
+  .aboutme-section hr {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
   .three-columns {
     padding-block: 0.5rem;
     list-style: none;
@@ -432,7 +474,7 @@ footer a {
 
   .projects {
     display: grid;
-    padding: 0;
+    padding: 5px;
     grid-template-columns: 1fr;
   }
 
@@ -447,7 +489,7 @@ footer a {
   }
 
   .project p {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
   .project h5 {
     font-size: 16px;
