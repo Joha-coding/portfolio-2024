@@ -150,10 +150,6 @@ section.aboutme-section {
   margin: 0 auto;
 }
 
-.aboutme-section ul {
-  text-align: center;
-}
-
 h5 {
   text-align: center;
   margin-top: 10px;
@@ -161,49 +157,75 @@ h5 {
   justify-content: center;
 }
 
-/* SCROLLING EFFECT */
+/*New Animation - Infinite Scroll Animation*/
+
+.scroller {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.scroller__inner {
+  padding-block: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+/* general styles */
 
 .tag-list {
-  list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding-inline: 0;
+  list-style: none;
 }
 
 .tag-list li {
   padding: 0.5rem;
+  background: white;
   border-radius: 0.5rem;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  font-size: 14px;
-}
-
-.scroller {
-  margin-left: 15px;
-}
-
-.scroller-inner {
-  padding-block: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.three-columns {
-  padding-block: 1rem;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  text-align: center;
-  justify-content: center;
-}
-
-.three-columns .sub-3col {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  font-size: 14px;
+  box-shadow: 0 0.5rem 1rem -0.25rem black;
 }
 
 /* WORK STYLING */
