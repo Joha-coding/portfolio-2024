@@ -142,6 +142,7 @@ section.aboutme-section {
 /* ABOUT ME STYLING */
 .aboutme-section {
   height: 100vh;
+  padding: 30px;
 }
 
 .aboutme-section .skills {
@@ -150,10 +151,10 @@ section.aboutme-section {
   margin: 0 auto;
 }
 
-h5 {
+.aboutme-section h5 {
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   justify-content: center;
 }
 
